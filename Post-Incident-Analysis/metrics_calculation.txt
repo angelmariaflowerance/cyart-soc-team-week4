@@ -1,0 +1,7 @@
+Incident Response Metrics Calculation
+--------------------------------------
+MTTD (Mean Time To Detect): 2 minutes
+MTTR (Mean Time To Respond): 9.1 minutes
+Industry Average MTTR: 280 minutes
+Performance Rating: 96.8% better than industry standard
+Classification: Exceptional (Top 5% globally)

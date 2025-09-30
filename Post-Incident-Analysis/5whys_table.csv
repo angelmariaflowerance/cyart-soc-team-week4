@@ -1,0 +1,6 @@
+Why Level,Question,Answer
+Why 1,Why did user enter credentials on fake site?,User didn't recognize phishing attempt
+Why 2,Why didn't user recognize phishing?,User lacks security awareness training
+Why 3,Why does user lack training?,No systematic security training program
+Why 4,Why no training program exists?,Organization hasn't prioritized security awareness
+Why 5,Why no security awareness priority?,Management focuses on technical controls over human factors
