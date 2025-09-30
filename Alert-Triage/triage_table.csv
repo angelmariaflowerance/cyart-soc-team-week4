@@ -1,0 +1,5 @@
+Alert ID,Description,Source IP,Priority,Rule ID,Timestamp,Agent,Hash
+1758968612.1019146,EICAR test file detected,127.0.0.1,High (10),100102,2025-09-27 10:23:32,wazuh-server,131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267
+1758968612.1018468,File added to system,127.0.0.1,Medium (5),554,2025-09-27 10:23:32,wazuh-server,-
+1758968612.1020120,Suspicious executable 'malware.exe',127.0.0.1,Medium (5),554,2025-09-27 10:23:32,wazuh-server,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+1758968612.1020796,Suspicious file 'backdoor.bat',127.0.0.1,Medium (5),554,2025-09-27 10:23:32,wazuh-server,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
