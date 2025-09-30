@@ -1,0 +1,58 @@
+=== SUSPICIOUS IP ANALYSIS ===
+Analysis Date: Sat Sep 27 01:45:11 PM EDT 2025
+Source: WIN-VM-01 (192.168.1.84)
+
+Remote IPs from netstat data:
+157.240.192.52 (Facebook/Meta)
+4.213.25.242 (Microsoft)
+52.123.128.14 (Microsoft)
+23.44.10.65 (Akamai CDN)
+20.190.145.142 (Microsoft)
+204.79.197.222 (Microsoft)
+13.107.3.254 (Microsoft)
+52.139.252.32 (Microsoft)
+192.168.1.76 (Internal network - Wazuh agent connection)
+
+=== ESTABLISHED CONNECTIONS ===
+External connections (HTTPS/443):
+
+Internal connections:
+
+=== PROCESS ANALYSIS ===
+Key processes with network connections:
+PID 5696 - External HTTPS connection
+PID 1016 - Microsoft services
+PID 4972 - Microsoft services (multiple connections)
+PID 8080 - Suspicious process name (same as common proxy port)
+PID 5916 - Wazuh agent connection (192.168.1.76:1514)
+
+=== SECURITY ASSESSMENT ===
+FINDINGS:
+1. Standard Windows network activity observed
+2. Multiple Microsoft service connections (normal)
+3. Facebook/Meta connection (social media activity)
+4. Wazuh SIEM agent connection confirmed (192.168.1.76:1514)
+5. POTENTIAL CONCERN: Process PID 8080 (matches common proxy port)
+
+RISK LEVEL: LOW-MEDIUM
+- Mostly legitimate traffic
+- No obvious malicious connections
+- PID 8080 requires investigation
+
+=== PROCESS INVESTIGATION ===
+Investigating PID 8080:
+Process 8080 not found in process list
+
+=== SUSPICIOUS PROCESS PATTERNS ===
+No obviously suspicious processes found
+
+=== FINAL ANALYSIS SUMMARY ===
+Evidence Collection: COMPLETE
+Network Analysis: COMPLETE
+Process Analysis: COMPLETE
+Chain of Custody: MAINTAINED
+
+CONCLUSION:
+Windows system shows normal business activity with SIEM monitoring active.
+No clear indicators of compromise detected.
+Recommend continued monitoring of PID 8080 process.
