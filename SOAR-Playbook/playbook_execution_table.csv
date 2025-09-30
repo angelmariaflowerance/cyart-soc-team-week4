@@ -1,0 +1,7 @@
+Step,Action,Tool Used,Status,Timestamp,Notes
+1,Check IP reputation,AlienVault OTX,✅ Complete,26-09-2025 15:30,IP 1.2.3.4 confirmed malicious with multiple threat indicators
+2,Add CrowdSec decision,cscli commands,✅ Complete,26-09-2025 05:07:03,Decision ID 125985 - 24h ban successfully applied
+3,Restart firewall bouncer,systemctl,✅ Complete,26-09-2025 05:07:03,"Firewall rules updated, blocking activated"
+4,Verify IP blocked,ipset/cscli list,✅ Complete,26-09-2025 05:07:03,"Confirmed in crowdsec-blacklists, 100% packet loss"
+5,Create TheHive case,TheHive UI,✅ Complete,26-09-2025 15:29,Case #1 (epZ3hZkBMVcpXrpv7lja) created
+6,Add IP observable,TheHive UI,✅ Complete,26-09-2025 15:34,Observable tagged as malicious/blocked

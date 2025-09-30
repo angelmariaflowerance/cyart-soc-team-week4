@@ -1,0 +1,22 @@
+CrowdSec Blocking Success
+# Commands Executed:
+sudo cscli decisions add --ip 1.2.3.4 --type ban --duration 24h --reason "OTX malicious reputation"
+sudo systemctl restart crowdsec-firewall-bouncer
+sudo cscli decisions list | grep 1.2.3.4
+
+# Verification Results:
+✅ Decision ID: 125985
+✅ Duration: 23h59m54s active
+✅ IPset Integration: 1.2.3.4 timeout 84788
+✅ Network Block: 100% packet loss confirmed
+
+CrowdSec Metrics Validation
+# Metrics Confirmation:
+sudo cscli metrics
+
+Results Show Active Protection:
+✅ OTX malicious reputation: 1 decision active
+✅ Firewall bouncer: 16 decision stream pulls
+✅ Total security coverage: 3,534+ blocked IPs
+✅ Active threat categories: HTTP exploits, SSH bruteforce, scans
+✅ API integration: 2 heartbeats, 2 logins confirmed
