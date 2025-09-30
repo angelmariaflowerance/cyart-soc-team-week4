@@ -1,0 +1,9 @@
+Time (UTC),MITRE ID,Technique Name,Command,PID,Status
+06:38:04,T1033,System Owner/User Discovery,$env:username,6660,Success
+06:38:15,T1087.001,Local Account Discovery,Get-WmiObject -Class Win32_UserAccount,292,Success
+06:39:10,T1057,Process Discovery,gwmi win32_process with owner filtering,220,Success
+06:40:10,T1135,Network Share Discovery,Get-SmbShare | ConvertTo-Json,7108,Success
+06:41:00,T1482,Domain Trust Discovery,nltest /dsgetdc:$env:USERDOMAIN,4468,Failed
+06:42:00,T1518.001,Security Software Discovery,wmic /NAMESPACE:\\root\SecurityCenter2 PATH AntiVirusProduct GET /value,6632,Success
+06:42:30,T1069,Permission Groups Discovery,gpresult /R,8820,Success
+06:43:20,T1518.001,Security Software Discovery,Get-WmiObject SecurityCenter AntiVirusProduct,5228,Success
