@@ -1,0 +1,8 @@
+Timestamp,User,Event_ID,Host,Logon_ID,Key Privileges,Notes
+"Sep 25, 2025 @ 18:29:51",test_admin,4672,DESKTOP-IROTPGQ,0x248cc6,"SeDebugPrivilege, SeSystemEnvironmentPrivilege","SUSPICIOUS: Administrative privileges assigned, includes dangerous SeDebugPrivilege"
+"Sep 24, 2025 @ 16:13:37",test_admin,4672,DESKTOP-IROTPGQ,0x4bd573,"SeDebugPrivilege, SeSystemEnvironmentPrivilege","SUSPICIOUS: Same user, multiple high-risk privileges"
+"Sep 24, 2025 @ 16:12:41",maria,4672,DESKTOP-IROTPGQ,0x48228e,"SeDebugPrivilege, SeSystemEnvironmentPrivilege",SUSPICIOUS: Administrative privileges for maria user
+"Sep 24, 2025 @ 16:08:33",test_admin,4672,DESKTOP-IROTPGQ,0x25cf60,"SeDebugPrivilege, SeSystemEnvironmentPrivilege",SUSPICIOUS: Repeated privilege escalation pattern
+"Sep 24, 2025 @ 16:08:27",DWM-2,4672,DESKTOP-IROTPGQ,0x2433fb,"SeAssignPrimaryTokenPrivilege, SeAuditPrivilege",NORMAL: System service account (Desktop Window Manager)
+"Sep 24, 2025 @ 16:08:27",DWM-2,4672,DESKTOP-IROTPGQ,0x2432ef,"SeAssignPrimaryTokenPrivilege, SeImpersonatePrivilege",NORMAL: System service account privileges
+"Sep 24, 2025 @ 15:42:49",maria,4672,DESKTOP-IROTPGQ,0x698a9,"SeDebugPrivilege, SeSystemEnvironmentPrivilege",SUSPICIOUS: Earlier instance of maria with admin privileges

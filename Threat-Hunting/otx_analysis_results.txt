@@ -1,0 +1,56 @@
+# AlienVault OTX Threat Intelligence Analysis Report
+
+Analysis Date: September 24-25, 2025
+Analyst: SOC Team
+Investigation: Unauthorized Privilege Escalation (T1078)
+
+---
+
+## Query Summary
+
+1. IP Address: 192.168.1.79 → No hits (expected private IP)
+2. Hostname: DESKTOP-IROTPGQ → 504 Gateway Timeout (service unavailable)
+3. Technique Search (T1078): 2 active campaigns found, including TAG-144 in South America
+4. Privilege Escalation Search: Active exploitation confirmed across multiple APT groups
+
+---
+
+## Threat Intelligence Assessment
+
+- T1078 (Valid Accounts) remains highly exploited globally
+- Multiple APT groups confirmed using this technique (e.g., TAG-144)
+- Internal findings match attack patterns (dangerous SeDebugPrivilege, SeSystemEnvironmentPrivilege)
+- Suspicious accounts: test_admin (3 events), maria (2 events)
+- Events clustered in short timeframes → possible automated tools
+
+Risk Level: HIGH
+
+---
+
+## Recommendations
+
+Immediate (0-24h):
+- Disable & investigate test_admin and maria
+- Review authentication logs for anomalies
+- Enable alerts for Event ID 4672 in Wazuh
+
+Short-term (1-7 days):
+- Hunt for related Event IDs (4624, 4625, 4648, 4768, 4769)
+- Audit privilege assignments and enforce least privilege
+- Baseline normal privilege use for anomaly detection
+
+Long-term (1-3 months):
+- Deploy PAM and MFA
+- Build Wazuh rules aligned to T1078
+- Train SOC team on privilege escalation detection
+
+---
+
+## Conclusion
+
+OTX confirms T1078 is an actively exploited technique. Internal findings align with known APT behaviors. Incident priority is HIGH: accounts must be investigated immediately and monitoring enhanced.
+
+---
+
+Report Classification: TLP:AMBER
+Distribution: SOC Team, Security Management
