@@ -1,0 +1,13 @@
+Security Metrics Calculations
+=============================
+
+Mean Time To Detect (MTTD): 121.49 seconds
+Mean Time To Resolve (MTTR): 121.49 seconds
+False Positives (level 1-2): 0 count
+
+Dwell Time Results:
+Agent            Dwell Time (seconds)   Dwell Time (hours)
+----------------------------------------------------------
+DESKTOP-IROTPGQ  120127.343             33.37
+kali             110819.406             30.78
+wazuh-server     100776.564             27.99
