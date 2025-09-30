@@ -1,0 +1,8 @@
+Root Cause Analysis
+=================
+Primary Issue: Lack of network segmentation between training and production environments
+
+Contributing Factors:
+- Vulnerable Samba 3.0.20 service
+- No host-based firewalls
+- Missing patch management for training systems

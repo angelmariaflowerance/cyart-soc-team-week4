@@ -1,0 +1,4 @@
+Time,Event,Source
+13:30:54,Attack initiated (Metasploit exploit),Kali 192.168.1.79
+13:30:55,Reverse shell established,Metasploitable2
+14:43:39,Containment completed (CrowdSec block),SOC Response

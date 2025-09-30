@@ -1,0 +1,5 @@
+Metric,Value,Industry Avg,Performance
+MTTD,<1 second,280 seconds,99.6% faster
+MTTR,72.75 minutes,73.5 days,99.9% faster
+Detection Rate,100%,Variable,Complete
+False Positives,0,Variable,Perfect
